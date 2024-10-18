@@ -24,6 +24,10 @@ public class Duracao {
         return String.format("Duração: %02d:%02d:%02d", totalHoras, totalMinutos, totalSegundos);
         
     }
+    
+    public int getTotalSegundos(){
+        return duracaoTotal;
+    }
     public Hora horaFinal(){
         return horaInicial.Incrementar(duracaoTotal);
     }

@@ -6,14 +6,14 @@ public class Hora {
     private int segundos;
     
     public boolean Validar(){
-        return hora >= 0 && hora < 24 && minutos >= 0 && minutos < 60 && segundos >= 0 && segundos < 60
+        return hora >= 0 && hora < 24 && minutos >= 0 && minutos < 60 && segundos >= 0 && segundos < 60;
 
     }
     public Hora (int hora, int minutos, int segundos){
         this.hora = hora;
         this.minutos = minutos;
         this.segundos = segundos;
-        if (!validar()){
+        if (!Validar()){
             throw new IllegalAccessException("Hora inválida!");
         }
     }
@@ -22,7 +22,7 @@ public class Hora {
         this.hora = hora;
         this.minutos = minuto;
         this.segundos = segundo;
-        if (!validar()) {
+        if (!Validar()) {
             throw new IllegalAccessException("Hora inválida!");
             
         }

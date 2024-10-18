@@ -1,10 +1,11 @@
 package codigo.model;
 
         public abstract class Etapa {
-            private static int etapa = 21;
+            private static int ETAPAS;
             private Duracao duracao;
             private Data data;
             private Hora horaInicial;
+            private int numero;
         
             public Duracao getDuracao() {
                 return duracao;
@@ -24,8 +25,7 @@ package codigo.model;
             }
             @Override
             public String toString(){
-                return String.format("Etapa %d: Data %s, Hora Inicial %s, Duração: %s segundos", 
-                numero, data, horaInicial, getDuracaoEmSegundos());           
+                return String.format("Etapa %d: Data %s, Hora Inicial %s, Duração: %s segundos, Número: %d", numero,  data, horaInicial, getDuracaoEmSegundos());           
              }
         }
             
