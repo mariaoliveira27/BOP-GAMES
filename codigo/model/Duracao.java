@@ -6,7 +6,7 @@ public class Duracao {
 
     public Duracao(Hora horaInicial, int tempoEmSegundos){
         this.horaInicial = horaInicial;
-        this.duracaoTotal = duracaoTotal;
+        this.duracaoTotal = tempoEmSegundos;
     }
     public boolean MaiorQue(Duracao outraDuracao){
         return this.duracaoTotal > outraDuracao.duracaoTotal;
