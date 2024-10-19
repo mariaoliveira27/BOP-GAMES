@@ -87,7 +87,7 @@ public class Main {
 
         Ciclista ciclista = encontrarCiclista(numeroCiclista);
         if (ciclista != null) {
-            ciclista.registrarEtapa(new Etapa(numeroEtapa, data, horaInicial, duracao));
+            ciclista.registrarEtapa(new EtapaConcreta(numeroEtapa, data, horaInicial, duracao));
             System.out.println("Etapa registrada com sucesso!");
         } else {
             System.out.println("Ciclista não encontrado.");
