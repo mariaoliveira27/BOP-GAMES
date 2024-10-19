@@ -7,9 +7,7 @@ package codigo.model;
             private Hora horaInicial;
             private int numero;
         
-            public Duracao getDuracao() {
-                return duracao;
-            }
+            
             public Etapa(int numero, Data data, Hora horaInicial, Duracao duracao){
                 this.data = data;
                 this.duracao = duracao;
@@ -17,11 +15,15 @@ package codigo.model;
                 this.horaInicial = horaInicial;
         
             }
+
+            public Duracao getDuracao() {
+                return duracao;
+            }
             public int getNumero(){
                 return numero;
             }
             public int getDuracaoEmSegundos(){
-                return getDuracaoEmSegundos();
+                return duracao.getTotalSegundos();
             }
             @Override
             public String toString(){
