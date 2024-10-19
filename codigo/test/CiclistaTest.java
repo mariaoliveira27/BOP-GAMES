@@ -2,7 +2,7 @@ package codigo.test;
 
 import codigo.model.Ciclista;
 import codigo.model.Participante;
-import codigo.model.Etapa; 
+import codigo.model.EtapaConcreta; 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
