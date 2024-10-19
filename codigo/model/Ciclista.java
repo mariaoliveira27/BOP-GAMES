@@ -52,12 +52,14 @@ public class Ciclista extends Participante {
         return null;
     }
 
-    public String tempoEntreCiclistas(Ciclista outro) {
-        int diferenca = Math.abs(calcularTempoTotal() - outro.calcularTempoTotal());
-        int minutos = diferenca / 60;
-        int segundos = diferenca % 60;
-        return String.format("Diferença: %dm %ds", minutos, segundos);
+    public String tempoEntreCiclistas(Ciclista outroCiclista) {
+        int diferencaTempo = Math.abs(this.calcularTempoTotal() - outroCiclista.calcularTempoTotal());
+        int minutos = diferencaTempo / 60;
+        int segundos = diferencaTempo % 60;
+        
+        return String.format("Diferença: %dmin %dseg", minutos, segundos); // Usando "min" e "seg" na formatação
     }
+    
 
     @Override
     public String toString() {

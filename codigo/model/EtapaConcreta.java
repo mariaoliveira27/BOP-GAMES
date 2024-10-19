@@ -8,6 +8,6 @@ public class EtapaConcreta extends Etapa {
 
     @Override
     public int getDuracaoEmSegundos() {
-        return getDuracao().DuracaoEmSegundos();
+        return getDuracao().getTotalSegundos();
     }
 }

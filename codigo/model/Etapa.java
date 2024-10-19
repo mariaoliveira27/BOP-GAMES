@@ -1,7 +1,7 @@
 package codigo.model;
 
         public abstract class Etapa {
-            private static int ETAPAS;
+            private static int ETAPAS = 21;
             private Duracao duracao;
             private Data data;
             private Hora horaInicial;
@@ -13,6 +13,7 @@ package codigo.model;
                 this.duracao = duracao;
                 this.numero = numero;
                 this.horaInicial = horaInicial;
+                ETAPAS++;
         
             }
 

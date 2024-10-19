@@ -5,6 +5,13 @@ public class Hora {
     private int minutos;
     private int segundos;
 
+    public Hora(int hora, int minutos) {
+        this(hora, minutos, 0);  // Chama o construtor completo com segundos definidos como 0
+    }
+    
+
+    
+
     public boolean Validar() {
         return hora >= 0 && hora < 24 && minutos >= 0 && minutos < 60 && segundos >= 0 && segundos < 60;
     }
