@@ -25,6 +25,7 @@ package codigo.model;
             public int getDuracaoEmSegundos(){
                 return duracao.getTotalSegundos();
             }
+            
             @Override
             public String toString(){
                 return String.format("Etapa %d: Data %s, Hora Inicial %s, Duração: %s segundos, Número: %d", numero,  data, horaInicial, getDuracaoEmSegundos());           
